@@ -9,7 +9,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+// to fix the scroll below the navbar.
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -27,6 +27,7 @@ const Navbar = () => {
 
   return (
     <nav
+    //for fixing the navbar at top & padding
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
